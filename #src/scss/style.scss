@@ -468,3 +468,246 @@
       }
    }
 }
+.business-benefit {
+   display: flex;
+   flex-direction: column;
+   gap: 70px;
+   // .business-benefit__header
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .business-benefit__title
+
+   &__title {
+   }
+
+   // .business-benefit__subtitle
+
+   &__subtitle {
+      color: $grey-2;
+      @include h4;
+   }
+
+   // .business-benefit__main
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+   }
+
+   // .business-benefit__bigs
+
+   &__bigs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+   }
+
+   // .business-benefit__smalls
+
+   &__smalls {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+      row-gap: 32px;
+   }
+
+   // .business-benefit__mediums
+
+   &__mediums {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+      row-gap: 40px;
+      li:nth-child(3) {
+         grid-column: span 2;
+      }
+   }
+   @media (max-width: $mobile) {
+      gap: 32px;
+      &__main {
+         gap: 0;
+      }
+      &__smalls {
+         margin-top: 32px;
+         margin-bottom: 64px;
+      }
+      &__smalls,
+      &__bigs,
+      &__mediums {
+         grid-template-columns: 1fr;
+         gap: 24px;
+         li:nth-child(3) {
+            grid-column: unset;
+         }
+      }
+      &__subtitle {
+         @include h4-mobile;
+      }
+   }
+}
+.benefit-big {
+   background-color: $white;
+   // .benefit-big__subtitle
+
+   &__subtitle {
+      border-color: #ebebeb;
+      color: #b4b4b4;
+   }
+
+   // .benefit-big__main
+
+   &__main {
+   }
+
+   // .benefit-big__title
+
+   &__title {
+      color: $black;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+   }
+
+   // .benefit-big__text
+
+   &__text {
+      color: #b4b4b4;
+   }
+}
+.benefit {
+   border-radius: 16px;
+   // .benefit__subtitle
+
+   &__subtitle {
+      padding: 16px 24px;
+      @include body-s;
+      border-bottom: 1px solid;
+      display: block;
+      width: 100%;
+   }
+
+   // .benefit__main
+
+   &__main {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   // .benefit__title
+
+   &__title {
+      @include h3;
+   }
+
+   // .benefit__text
+
+   &__text {
+      @include body-m;
+   }
+   @media (max-width: $mobile) {
+      &__subtitle {
+         padding: 8px 16px;
+      }
+      &__main {
+         gap: 16px;
+         padding-right: 16px;
+      }
+      &__title {
+         @include h3-mobile;
+      }
+      &__text {
+         @include body-m-mobile;
+      }
+      .btn {
+         width: 100%;
+      }
+   }
+}
+.benefit-small {
+   background-color: #1b1c1d;
+   // .benefit-small__subtitle
+
+   &__subtitle {
+      border-color: #383838;
+      color: #b4b4b4;
+   }
+
+   // .benefit-small__main
+
+   &__main {
+   }
+
+   // .benefit-small__title
+
+   &__title {
+   }
+
+   // .benefit-small__text
+
+   &__text {
+      color: #b4b4b4;
+   }
+}
+.benefit-medium {
+   background-color: $white;
+   border-radius: 24px;
+   padding: 16px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   // .benefit-medium__header
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn {
+         width: 222px;
+         flex: 0 0 222px;
+      }
+   }
+
+   // .benefit-medium__main
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   // .benefit-medium__title
+
+   &__title {
+      color: $black;
+   }
+
+   // .benefit-medium__text
+
+   &__text {
+      color: $grey-2;
+   }
+   @media (max-width: $mobile) {
+      gap: 20px;
+      &__header {
+         & > img {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+         }
+         .btn {
+            width: 180px;
+            flex: 0 0 180px;
+         }
+      }
+      &__main {
+         gap: 16px;
+      }
+   }
+}
