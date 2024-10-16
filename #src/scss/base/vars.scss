@@ -1,0 +1,97 @@
+$mobile: 1024px;
+
+$burgundy: #6e0d25;
+$black: #0f0f0f;
+$white: #fff;
+$grey: #383838;
+$grey-2: #b4b4b4;
+
+@mixin h1 {
+   //styleName: Desktop/H1;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: calc(50 / 48);
+   letter-spacing: -0.06em;
+}
+@mixin h1-mobile {
+   //styleName: Mobile/H1;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: calc(37.8 / 36);
+   letter-spacing: -0.06em;
+}
+@mixin h2 {
+   //styleName: Desktop/H2;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: calc(42 / 40);
+   letter-spacing: -0.06em;
+}
+@mixin h2-mobile {
+   //styleName: Mobile/H2;
+   font-size: 28px;
+   font-weight: 700;
+   line-height: calc(29 / 28);
+   letter-spacing: -0.06em;
+}
+@mixin h3 {
+   //styleName: Desktop/H3;
+   font-size: 28px;
+   font-weight: 700;
+   line-height: calc(33 / 28);
+   letter-spacing: -0.06em;
+}
+@mixin h3-mobile {
+   //styleName: Mobile/H3;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: calc(26.4 / 22);
+   letter-spacing: -0.06em;
+}
+@mixin h4 {
+   //styleName: Desktop/H4;
+   font-family: Arial;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: calc(20 / 16);
+   letter-spacing: -0.06em;
+}
+@mixin h4-mobile {
+   //styleName: Mobile/H4;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: calc(17.5 / 14);
+   letter-spacing: -0.06em;
+}
+@mixin body-l {
+   //styleName: Mobile/Body L;
+   font-size: 16px;
+   line-height: calc(22.4 / 16);
+   letter-spacing: -0.06em;
+}
+@mixin body-l-mobile {
+   //styleName: Mobile/Body L;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: calc(22.4 / 16);
+   letter-spacing: -0.06em;
+}
+@mixin body-m {
+   //styleName: Desktop/Body M;
+   font-size: 16px;
+   line-height: calc(22 / 16);
+   letter-spacing: -0.06em;
+}
+@mixin body-m-mobile {
+   //styleName: Mobile/Body M;
+   font-family: Arial;
+   font-size: 14px;
+   line-height: calc(19.6 / 14);
+   letter-spacing: -0.06em;
+}
+@mixin body-s {
+   //styleName: Desktop/Body S;
+   font-size: 14px;
+   line-height: calc(19.6 / 14);
+   letter-spacing: -0.06em;
+}
