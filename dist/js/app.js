@@ -40,3 +40,22 @@ function headerWork() {
       body.classList.toggle("lock");
    });
 }
+const lenis = new Lenis({
+   duration: 2,
+   smooth: true,
+   direction: "vertical",
+   // lerp: 0.05,
+});
+window.lenis = lenis;
+
+//get scroll value
+lenis.on("scroll", (e) => {
+   // console.log(e);
+});
+
+function raf(time) {
+   lenis.raf(time);
+   requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
