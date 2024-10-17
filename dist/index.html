@@ -5,28 +5,29 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="format-detection" content="telephone=no">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/style.min.css">
    <title>Главная</title>
 </head>
 
 <body>
    <div class="wrapper">
-      <header class="header">
+      <header class="header lock-padding">
    <div class="container">
       <div class="header__wrapper">
          <a href="index.html" class="header__logo">
             <img src="img/logo.svg" alt="">
             <span>
-               ИВ<b>АН АНИ</b>СИМОВ
+               ИВАН АНИСИМОВ
             </span>
          </a>
          <div class="header__menu">
             <ul class="header__list">
-               <li><a href="#">Экспертиза</a></li>
-               <li><a href="#">Программы</a></li>
-               <li><a href="#">Обо мне</a></li>
-               <li><a href="#">Сотрудничество</a></li>
-               <li><a href="#">Контакты</a></li>
+               <li><a href="#" onclick="lenis.scrollTo('#experience')">Экспертиза</a></li>
+               <li><a href="#" onclick="lenis.scrollTo('#cases')">Программы</a></li>
+               <li><a href="#" onclick="lenis.scrollTo('#help')">Обо мне</a></li>
+               <li><a href="#" onclick="lenis.scrollTo('#business')">Сотрудничество</a></li>
+               <li><a href="#" onclick="lenis.scrollTo('#footer')">Контакты</a></li>
             </ul>
             <ul class="header__contacts">
                <li>
@@ -106,7 +107,7 @@
                </div>
             </div>
          </section>
-         <section class="experience">
+         <section class="experience" id="experience">
             <div class="container">
                <div class="experience__wrapper">
                   <h2 class="experience__title">Опыт</h2>
@@ -128,7 +129,7 @@
                </div>
             </div>
          </section>
-         <section class="cases">
+         <section class="cases" id="cases">
             <div class="container">
                <div class="cases__wrapper">
                   <div class="cases__header">
@@ -207,7 +208,7 @@
                </div>
             </div>
          </section>
-         <section class="help">
+         <section class="help" id="help">
             <div class="container">
                <div class="help__wrapper">
                   <div class="help__main">
@@ -252,7 +253,7 @@
                </div>
             </div>
          </section>
-         <section class="business">
+         <section class="business" id="business">
             <div class="container">
                <div class="business__wrapper">
                   <div class="business-help">
@@ -496,9 +497,353 @@
                </div>
             </div>
          </section>
+         <section class="process">
+            <div class="container">
+               <div class="process__wrapper">
+                  <div class="process__header">
+                     <span>Процесс сотрудничества</span>
+                     <h2 class="process__title h2">Наиболее продуктивный способ взаимодействия</h2>
+                  </div>
+                  <div class="swiper">
+                     <ul class="swiper-wrapper">
+                        <li class="process__item swiper-slide active">
+                           <span class="process__index">01</span>
+                           <p class="process__text">Ознакомительный этап. Вы рассказываете о своих болях и проблемах</p>
+                        </li>
+                        <li class="process__item swiper-slide active">
+                           <span class="process__index">02</span>
+                           <p class="process__text">Определение с дальнейшими действиями, предложения по улучшению вашей
+                              ситуации</p>
+                        </li>
+                        <li class="process__item swiper-slide active">
+                           <span class="process__index">03</span>
+                           <p class="process__text">Определение с рамками: сроки, даты, бюджет. Определение количества
+                              участников и их характеристика</p>
+                        </li>
+                        <li class="process__item swiper-slide">
+                           <span class="process__index">04</span>
+                           <p class="process__text">Разговор с владельцем бизнеса / генеральным директором. Заказчик
+                              тот,
+                              на чьи показатели влияет программа</p>
+                        </li>
+                        <li class="process__item swiper-slide">
+                           <span class="process__index">05</span>
+                           <p class="process__text">В некоторых случаях я могу попросить об интервью с участниками
+                              программы, чтобы получить более широкую картину</p>
+                        </li>
+                        <li class="process__item swiper-slide">
+                           <span class="process__index">06</span>
+                           <p class="process__text">Главное правило – я не смогу Вам помочь, пока мы не проговорим Вашу
+                              и
+                              только Вашу конкретную ситуацию.</p>
+                        </li>
+                     </ul>
+                  </div>
+                  <ul class="process__list">
+                     <li class="process__item active">
+                        <span class="process__index">01</span>
+                        <p class="process__text">Ознакомительный этап. Вы рассказываете о своих болях и проблемах</p>
+                     </li>
+                     <li class="process__item active">
+                        <span class="process__index">02</span>
+                        <p class="process__text">Определение с дальнейшими действиями, предложения по улучшению вашей
+                           ситуации</p>
+                     </li>
+                     <li class="process__item active">
+                        <span class="process__index">03</span>
+                        <p class="process__text">Определение с рамками: сроки, даты, бюджет. Определение количества
+                           участников и их характеристика</p>
+                     </li>
+                     <li class="process__item">
+                        <span class="process__index">04</span>
+                        <p class="process__text">Разговор с владельцем бизнеса / генеральным директором. Заказчик тот,
+                           на чьи показатели влияет программа</p>
+                     </li>
+                     <li class="process__item">
+                        <span class="process__index">05</span>
+                        <p class="process__text">В некоторых случаях я могу попросить об интервью с участниками
+                           программы, чтобы получить более широкую картину</p>
+                     </li>
+                     <li class="process__item">
+                        <span class="process__index">06</span>
+                        <p class="process__text">Главное правило – я не смогу Вам помочь, пока мы не проговорим Вашу и
+                           только Вашу конкретную ситуацию.</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="reviews">
+            <div class="container">
+               <div class="reviews__wrapper">
+                  <div class="reviews__header">
+                     <h2 class="reviews__title h2">Отзывы о сотрудничестве со мной</h2>
+                     <div class="reviews__nav">
+                        <button class="reviews__btn reviews__btn_prev swiper-button-prev">
+                           <img src="img/arrow-narrow-left.svg" alt="">
+                        </button>
+                        <button class="reviews__btn reviews__btn_next swiper-button-next">
+                           <img src="img/arrow-right.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+                  <div class="reviews__slider swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews__item">
+                           <div class="reviews__text">Текст отзыва</div>
+                           <div class="reviews__author">Автор отзыва</div>
+                        </div>
+                        <div class="swiper-slide reviews__item">
+                           <div class="reviews__text">Текст отзыва</div>
+                           <div class="reviews__author">Автор отзыва</div>
+                        </div>
+                        <div class="swiper-slide reviews__item">
+                           <div class="reviews__text">Текст отзыва</div>
+                           <div class="reviews__author">Автор отзыва</div>
+                        </div>
+                        <div class="swiper-slide reviews__item">
+                           <div class="reviews__text">Текст отзыва</div>
+                           <div class="reviews__author">Автор отзыва</div>
+                        </div>
+                        <div class="swiper-slide reviews__item">
+                           <div class="reviews__text">Текст отзыва</div>
+                           <div class="reviews__author">Автор отзыва</div>
+                        </div>
+                        <div class="swiper-slide reviews__item">
+                           <div class="reviews__text">Текст отзыва</div>
+                           <div class="reviews__author">Автор отзыва</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="documents">
+            <div class="container">
+               <div class="documents__wrapper process__wrapper">
+                  <div class="documents__header process__header">
+                     <span>Сертификаты</span>
+                     <h2 class="documents__title h2">Мои знания многократно подтверждены</h2>
+                  </div>
+                  <ul class="documents__list">
+                     <li class="documents-item">
+                        <h4 class="documents-item__tilte h4">CCL - Сертифицированный фасилитатор</h4>
+                        <div class="documents-item__footer">
+                           <span class="documents-item__subtitle">Сертификация Creative Center Leadership,
+                              Greensboro</span>
+                           <img src="img/document-itme.png" alt="">
+                        </div>
+                     </li>
+                     <li class="documents-item">
+                        <h4 class="documents-item__tilte h4">CCL - Сертифицированный фасилитатор</h4>
+                        <div class="documents-item__footer">
+                           <span class="documents-item__subtitle">Сертификация Creative Center Leadership,
+                              Greensboro</span>
+                           <img src="img/document-itme.png" alt="">
+                        </div>
+                     </li>
+                     <li class="documents-item">
+                        <h4 class="documents-item__tilte h4">CCL - Сертифицированный фасилитатор</h4>
+                        <div class="documents-item__footer">
+                           <span class="documents-item__subtitle">Сертификация Creative Center Leadership,
+                              Greensboro</span>
+                           <img src="img/document-itme.png" alt="">
+                        </div>
+                     </li>
+                     <li class="documents-item">
+                        <h4 class="documents-item__tilte h4">CCL - Сертифицированный фасилитатор</h4>
+                        <div class="documents-item__footer">
+                           <span class="documents-item__subtitle">Сертификация Creative Center Leadership,
+                              Greensboro</span>
+                           <img src="img/document-itme.png" alt="">
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="news">
+            <div class="container">
+               <div class="news__wrapper">
+                  <h2 class="news__title h2">Что нового</h2>
+                  <div class="swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="news__image">
+                              <img src="img/news1.png" alt="">
+                           </div>
+                           <div class="news__main">
+                              <h4 class="news__subtitle">Провел бизнес-консультирование для стартапов</h4>
+                              <span class="news__date">10.10.2024</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="news__image">
+                              <img src="img/news1.png" alt="">
+                           </div>
+                           <div class="news__main">
+                              <h4 class="news__subtitle">Провел бизнес-консультирование для стартапов</h4>
+                              <span class="news__date">10.10.2024</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="news__image">
+                              <img src="img/news1.png" alt="">
+                           </div>
+                           <div class="news__main">
+                              <h4 class="news__subtitle">Провел бизнес-консультирование для стартапов</h4>
+                              <span class="news__date">10.10.2024</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="news__image">
+                              <img src="img/news1.png" alt="">
+                           </div>
+                           <div class="news__main">
+                              <h4 class="news__subtitle">Провел бизнес-консультирование для стартапов</h4>
+                              <span class="news__date">10.10.2024</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="news__image">
+                              <img src="img/news1.png" alt="">
+                           </div>
+                           <div class="news__main">
+                              <h4 class="news__subtitle">Провел бизнес-консультирование для стартапов</h4>
+                              <span class="news__date">10.10.2024</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="news__image">
+                              <img src="img/news1.png" alt="">
+                           </div>
+                           <div class="news__main">
+                              <h4 class="news__subtitle">Провел бизнес-консультирование для стартапов</h4>
+                              <span class="news__date">10.10.2024</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="form">
+            <div class="container">
+               <div class="form__wrapper">
+                  <div class="form__main">
+                     <h2 class="form__title h2">Свяжитесь со мной</h2>
+                     <p class="form__text">Оценю вашу ситуацию, получу вводные и составлю план сотрудничества. Заполните
+                        анкетку, и я свяжусь с вами в ближайшее время.</p>
+                  </div>
+                  <div class="form__card">
+                     <ul class="form__list">
+                        <li>
+                           <input type="text" placeholder="Ваше имя">
+                        </li>
+                        <li>
+                           <input type="text" placeholder="Ваш номер телефона" data-phone>
+                        </li>
+                     </ul>
+                     <div class="form__footer">
+                        <a href="#callbackModal" class="modal__link help__btn btn">
+                           <span>Связаться со мной</span>
+                           <div>
+                              <img src="img/arrow-narrow-up-right.svg" alt="">
+                           </div>
+                        </a>
+                        <p>Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">Политикой
+                              конфиденциальности</a> и с <a href="#" target="_blank">Политикой обработки данных</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="modal" id="callbackModal">
+            <div class="modal__content">
+               <section class="form">
+                  <div class="form__wrapper">
+                     <div class="form__main">
+                        <h2 class="form__title h2">Свяжитесь со мной</h2>
+                        <p class="form__text">Оценю вашу ситуацию, получу вводные и составлю план сотрудничества.
+                           Заполните
+                           анкетку, и я свяжусь с вами в ближайшее время.</p>
+                     </div>
+                     <div class="form__card">
+                        <ul class="form__list">
+                           <li>
+                              <input type="text" placeholder="Ваше имя">
+                           </li>
+                           <li>
+                              <input type="text" placeholder="Ваш номер телефона" data-phone>
+                           </li>
+                        </ul>
+                        <div class="form__footer">
+                           <a href="#callbackModal" class="modal__link help__btn btn">
+                              <span>Связаться со мной</span>
+                              <div>
+                                 <img src="img/arrow-narrow-up-right.svg" alt="">
+                              </div>
+                           </a>
+                           <p>Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">Политикой
+                                 конфиденциальности</a> и с <a href="#" target="_blank">Политикой обработки
+                                 данных</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
       </main>
-      <footer></footer>
+      <footer class="footer" id="footer">
+   <div class="footer__upper">
+      <div class="container">
+         <div class="footer__header">
+            <img src="img/footer-logo.svg" alt="">
+            <h2 class="h2 footer__title">
+               Обсудим ваши проблемы, сформулируем задачу и найдем оптимальное решение.
+            </h2>
+         </div>
+         <ul class="footer__list">
+            <li>
+               <a href="tel:+ 8 000 000 00-00">
+                  <h4 class="h4">Телефон</h4>
+                  <span>+ 8 000 000 00-00</span>
+               </a>
+            </li>
+            <li>
+               <a href="">
+                  <h4 class="h4">WhatsApp</h4>
+                  <span>+ 8 000 000 00-00</span>
+               </a>
+            </li>
+            <li>
+               <a href="mailto:ivan.a.anisimov@gmail.com">
+                  <h4 class="h4">Электронная почта</h4>
+                  <span>ivan.a.anisimov@gmail.com</span>
+               </a>
+            </li>
+         </ul>
+
+      </div>
    </div>
+
+   <div class="footer-down">
+      <div class="container">
+         <div class="footer-down__wrapper">
+            <span class="footer-down__logo">ИВАН АНИСИМОВ</span>
+            <ul>
+               <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+               <li><a href="#" target="_blank">Политика обработки данных</a></li>
+               <li>ИП ИМЯ, ИНН 999999999, ОГРНИП 111111111111111</li>
+            </ul>
+            <a href="#" target="_blank">Дизайн Gracie-Digital</a>
+
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
    <script src="https://unpkg.com/imask"></script>
    <script src="js/app.js"></script>

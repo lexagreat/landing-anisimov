@@ -88,3 +88,7 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
    pointer-events: none;
 }
+
+body.lock {
+   overflow: hidden;
+}
